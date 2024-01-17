@@ -44,7 +44,7 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
   font-weight: 700;
-  overflow: hidden;
+  
 }
 
 h1, h2 {
@@ -221,7 +221,6 @@ img {
   color: var(--white-color);
   padding: .625rem 1rem;
   border-radius: .25rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--black-color)), to(var(--first-color)));
   background-image: linear-gradient(to right, var(--black-color), var(--first-color));
 }
 
@@ -270,9 +269,9 @@ img {
     text-transform: initial;
   }
   .home {
-    /*-ms-grid-rows: max-content 50px;
+    -ms-grid-rows: max-content 50px;
         grid-template-rows: -webkit-max-content 50px;
-        grid-template-rows: max-content 50px; */
+        grid-template-rows: max-content 150px;
     -ms-flex-line-pack: center;
         align-content: center;
   }
