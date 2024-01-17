@@ -4,33 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/styles.css">
-        <title>Landing page responsive portfolio</title>
+        <title>Juan Sebastian Pontoh Personal Portofolio</title>
     </head>
     <body>
-        <!-- OVERLAY -->
-        <div class="overlay first"></div>
-        <div class="overlay second"></div>
-        <div class="overlay third"></div>
 
         <!-- HEADER -->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Bedimcode</a>
-                </div>
+                    <a href="#" class="nav__logo">
+                      <img src="assets/img/logoJuxse.png" alt="Your Logo">
+                    </a>
+                  </div>                  
 
-                <div class="nav__menu" id="nav-menu">
+                <!-- <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="nav__toggle" id="nav-toggle">
                     <ion-icon name="menu"></ion-icon>
+                </div>
+
+                <div class="nav__social">
+                    <a href="https://github.com/juxse" target="_blank" class="home__social-icon-link">
+                        <ion-icon name="logo-github" class="nav__social-icon"></ion-icon>
+                    </a>                      <a href="https://www.instagram.com/juxse" target="_blank" class="home__social-icon-link">
+                        <ion-icon name="logo-instagram" class="nav__social-icon"></ion-icon>
+                    </a>                      <a href="https://www.linkedin.com/in/juxse" target="_blank" class="home__social-icon-link">
+                        <ion-icon name="logo-linkedin" class="nav__social-icon"></ion-icon>
+                    </a>  
                 </div>
             </nav>
         </header>
@@ -40,25 +47,49 @@
             <div class="home">
                 <div class="home__information">
                     <span class="home__pressent anime-text">Hello, My name is</span>
-                    <h1 class="home__title anime-text">John Doe</h1>
-                    <span class="home__skill anime-text">Web Developer</span>
+                    <h1 class="home__title anime-text">Juan Sebastian Pontoh</h1>
+                    <span class="home__skill anime-text">Front-end Web Developer | UI/UX</span>
                     
                     <div>
-                        <a href="#" class="home__button anime-text">DOWNLOAD CV</a>
-                    </div>
+                        <a href="assets/resume.pdf" download class="home__button anime-text">DOWNLOAD CV</a>
+                      </div>
+                      
                 </div>
 
                 <div class="home__img">
-                    <img src="assets/img/img.jpg" alt="">
+                    <img src="assets/img/fotoJuan.png" alt="">
                 </div>
                 
-                <div class="home__social">
-                    <ion-icon name="logo-facebook" class="home__social-icon"></ion-icon>
-                    <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
-                    <ion-icon name="logo-twitter" class="home__social-icon"></ion-icon>
+                <div class="container-description">
+                    <h3 class="description__title">I am a final year student at Multimedia Nusantara University, majoring in informatics. With a deep interest in technology and design
+                        , I am carving my path as a Front-end Developer. Besides coding, I am also interested in UI/UX Design to create seamless and visually appealing user interface and experiences.
+                    </h3>
                 </div>
 
-            </div>
+
+                <div class="skills">
+                    <h2 class="skills__title">Skills</h2>
+                    <div class="skills__container bd-grid">
+                        <div class="skills__item">
+                            <ion-icon name="logo-html5"></ion-icon>
+                            HTML
+                        </div>
+                        <div class="skills__item">
+                            <ion-icon name="logo-css3"></ion-icon>
+                            CSS
+                        </div>
+                        <div class="skills__item">
+                            <ion-icon name="logo-javascript"></ion-icon>
+                            JavaScript
+                        </div>
+                        <div class="skills__item">
+                            <ion-icon name="logo-python"></ion-icon>
+                            Python
+                        </div>
+                    </div>
+                </div>
+                
+            
         </main>
 
         <!-- GSAP -->

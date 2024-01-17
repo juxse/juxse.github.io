@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-/*----- VARIABLES CSS Y SASS -----*/
-/*Varibles sass*/
-/*Variables css*/
-/*Colores*/
+
 :root {
-  --first-color: #4E1116;
-  --black-color: #000;
-  --white-color: #FFF;
+  --first-color: #284377;
+  --black-color: #ffffff;
+  --white-color: #1b2f55;
 }
 
-/*Fuente y tipografia*/
 :root {
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 2.5rem;
@@ -107,7 +103,6 @@ img {
     position: fixed;
     top: -100%;
     left: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--black-color)), to(var(--first-color)));
     background-image: linear-gradient(var(--black-color), var(--first-color));
     width: 100%;
     height: 45%;
@@ -144,9 +139,11 @@ img {
   background-color: var(--first-color);
 }
 
-.nav__logo {
+.nav__logo img{
   font-size: var(--normal-font-size);
   color: var(--white-color);
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .nav__toggle {
@@ -154,6 +151,21 @@ img {
   cursor: pointer;
 }
 
+.nav__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__social-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__social-icon:hover {
+  color: var(--first-color);
+}
 /*Aparecer menu*/
 .show {
   top: 3rem;
@@ -196,7 +208,11 @@ img {
 
 .home__skill {
   font-size: var(--h2-font-size);
+  height: 1.5rem; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
+
 
 .home__button {
   display: inline-block;
@@ -217,26 +233,14 @@ img {
   z-index: var(--z-normal);
 }
 
-.home__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 1rem;
+.home__img img {
+  width: 100%;
+  height: 75%;
+  border-radius: 15px; /* Adjust the value for rounded corners */
 }
 
-.home__social-icon {
-  margin-bottom: 2rem;
-  font-size: 1.33rem;
-  cursor: pointer;
-}
 
-.home__social-icon:hover {
-  color: var(--first-color);
-}
+
 
 /*----- MEDIA QUERIES -----*/
 @media screen and (min-width: 768px) {
@@ -266,9 +270,9 @@ img {
     text-transform: initial;
   }
   .home {
-    -ms-grid-rows: max-content 20px;
-        grid-template-rows: -webkit-max-content 20px;
-        grid-template-rows: max-content 20px;
+    /*-ms-grid-rows: max-content 50px;
+        grid-template-rows: -webkit-max-content 50px;
+        grid-template-rows: max-content 50px; */
     -ms-flex-line-pack: center;
         align-content: center;
   }
@@ -322,4 +326,47 @@ img {
 .third {
   background-color: var(--first-color);
   left: 66.6%;
+}
+
+/*desc*/
+.container-description{
+  padding-top: 5px;
+  max-width: 50%;
+}
+
+/* SKILLS */
+.skills {
+  padding: 2rem 0;
+  max-width: 50%;
+}
+
+.skills__title {
+  text-align: center;
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  overflow: auto; /* Enable scrolling for the skills container */
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: var(--black-color);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+ion-icon {
+  font-size: 2rem; /* Adjust the size of the Ionicons */
+  margin-bottom: 0.5rem; /* Add some spacing between the icon and text */
 }
