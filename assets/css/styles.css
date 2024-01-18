@@ -176,13 +176,6 @@ img {
 .home {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: max-content max-content;
-      grid-template-rows: -webkit-max-content -webkit-max-content;
-      grid-template-rows: max-content max-content;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
   row-gap: 2.3rem;
   height: 100%;
   font-weight: 700;
@@ -315,6 +308,7 @@ img {
   text-align: center;
   font-size: var(--h2-font-size);
   margin-bottom: 1.5rem;
+  padding-top: 15px;
 }
 
 .skills__container {
