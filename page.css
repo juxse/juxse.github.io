@@ -213,8 +213,18 @@ body {
 }
 
 #product1 .pro .des{
-    text-align: start;
     padding: 10px 0;
+}
+
+#product1 .pro .des{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#product1 .pro .des ion-icon{
+    font-size: 50px;
 }
 
 #product1 .pro .des span{
